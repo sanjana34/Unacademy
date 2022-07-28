@@ -32,9 +32,9 @@ namespace Unacademy.StepDefinitions
         [When(@"User goto JEEandNEETPreparation and clicks on IIT JEE")]
         public void WhenUserGotoJEEandNEETPreparationAndClicksOnIITJEE()
         {
-
-            jnp.IITjEE();
             Thread.Sleep(5000);
+            jnp.IITjEE();
+            Thread.Sleep(2000);
 
         }
 
@@ -48,10 +48,10 @@ namespace Unacademy.StepDefinitions
         [When(@"User goto HealthandFitness and clicks on Yoga")]
         public void WhenUserGotoHealthandFitnessAndClicksOnYoga()
         {
-            hfp.yoga();
-            Thread.Sleep(5000);
-            //hfp.yoga();
 
+            Thread.Sleep(5000);
+            hfp.yoga();
+            Thread.Sleep(2000);
         }
 
         [Then(@"It shows Yoga page with Choose a batch button")]
@@ -59,13 +59,14 @@ namespace Unacademy.StepDefinitions
         {
             Thread.Sleep(5000);
             CaptureScreenshot();
-            Thread.Sleep(5000);
+            
         }
         [When(@"User goto Marketing and clicks on Digital Marketing")]
         public void WhenUserGotoMarketingAndClicksOnDigitalMarketing()
         {
-            mp.digitalMarketing();
             Thread.Sleep(5000);
+            mp.digitalMarketing();
+            Thread.Sleep(2000);
 
         }
 
@@ -74,14 +75,15 @@ namespace Unacademy.StepDefinitions
         {
             Thread.Sleep(5000);
             CaptureScreenshot();
-            Thread.Sleep(5000);
+            
         }
         [When(@"User goto StatePSC and clicks on TNPSC")]
         public void WhenUserGotoStatePSCAndClicksOnTNPSC()
         {
-            Thread.Sleep(2000);
-            sp.Tnpsc();
             Thread.Sleep(5000);
+            sp.Tnpsc();
+            Thread.Sleep(2000);
+
         }
 
         [Then(@"It shows TNPSC page with Get a subscription button")]
